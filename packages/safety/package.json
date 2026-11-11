@@ -1,0 +1,23 @@
+{
+  "name": "@childgpt/safety",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Многоуровневый контур защиты ChildGPT: нормализация, правила, редакция личных данных, LLM-судьи, кризисные ответы. Fail-closed.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@childgpt/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "vitest": "^3.2.0"
+  }
+}

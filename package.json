@@ -1,0 +1,17 @@
+{
+  "name": "childgpt",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ChildGPT — безопасный ИИ-собеседник и помощник по учёбе для детей. Сайт, iOS/Android-приложение и API с многоуровневой защитой контента.",
+  "packageManager": "pnpm@11.22.0",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "dev:api": "pnpm --filter @childgpt/api dev",
+    "dev:web": "pnpm --filter @childgpt/web dev",
+    "build": "pnpm --filter @childgpt/api --filter @childgpt/web build",
+    "test": "pnpm -r --if-present test",
+    "typecheck": "pnpm -r --if-present typecheck"
+  }
+}

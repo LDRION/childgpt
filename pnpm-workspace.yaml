@@ -1,0 +1,10 @@
+packages:
+  - "packages/*"
+  - "apps/*"
+# Expo/Metro надёжнее всего работает с «плоским» node_modules в монорепо.
+nodeLinker: hoisted
+allowBuilds:
+  esbuild: true
+  sharp: true
+  mongodb-memory-server: true
+  unrs-resolver: true
