@@ -11,7 +11,7 @@ const schema = z
     APP_TIMEZONE: z.string().default('Europe/Moscow'),
     LLM_PROVIDER: z.enum(['siberi', 'mock']).default('mock'),
     SIBERI_API_KEY: z.string().optional(),
-    SIBERI_BASE_URL: z.string().url().default('https://siberi.online/api/v1/ai'),
+    SIBERI_BASE_URL: z.string().url().default('http://127.0.0.1:5005/api/v1/ai'),
     SAFETY_INPUT_JUDGE: z.enum(['always', 'on_signal']).default('always'),
     KID_MESSAGES_PER_MINUTE: z.coerce.number().int().positive().default(10),
     SMTP_URL: z.string().optional(),
